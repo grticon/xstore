@@ -89,7 +89,7 @@ header a
 {
     font-size: 10px;
     font-weight: 300;
-    color: #1A163C;
+    color: #120b3f;
 }
 .card b
 {
@@ -106,7 +106,7 @@ header a
 button
 {
     border: none;
-    background-color: #1A163C;
+    background-color: #6B59E7;
     color: #FFFFFF;
 }
 .btn, .active
@@ -136,7 +136,7 @@ button
 footer
 {
     height: 64px;
-    background-color: #1A163C;
+    background-color: #6B59E7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,7 +183,7 @@ footer p
         max-width: 200px;
         margin: 10px auto;
         height: fit-content;
-        padding: 20px
+        padding: 20px;
     }
     .cards
     {
