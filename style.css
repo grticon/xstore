@@ -179,12 +179,16 @@ footer p
 {
     .card
     {
-        width: 100%;
-        max-width: 400px;
+        width: 46%;
+        max-width: 200px;
         margin: 10px auto
     }
     .cards
     {
         padding: 10px 20px;
+    }
+    .card img
+    {
+        width: 120px;
     }
 }
