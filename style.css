@@ -5,6 +5,11 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
+body
+{
+    
+    background-color: #a5333312;
+}
 a
 {
     text-decoration: none;
