@@ -181,7 +181,9 @@ footer p
     {
         width: 46%;
         max-width: 200px;
-        margin: 10px auto
+        margin: 10px auto;
+        height: fit-content;
+        padding: 20px
     }
     .cards
     {
