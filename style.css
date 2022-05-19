@@ -1,0 +1,190 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+a
+{
+    text-decoration: none;
+}
+.flex
+{
+    display: flex;
+}
+.sb
+{
+    justify-content: space-between;
+}
+header
+{
+    padding: 0px 50px;
+    height: 64px;
+    align-items: center;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+}
+header h3 a
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: #6b59e7;
+}
+header input
+{
+    width: 400px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #f4f4f4;
+    border: none;
+    padding: 20px;
+    outline: none;
+}
+input::placeholder
+{
+    color: #A6A3BA;
+}
+header a
+{
+    font-size: 12px;
+    color: #413A72;
+}
+.w50, .w51
+{
+    width: 48%;
+    min-width: 300px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.w50
+{
+    background-image: url(image/img1.jpg);
+}
+.w51
+{
+    background-image: url(image/img2.jpg);
+}
+.ads
+{
+    max-width: 1366px;
+    margin: auto;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.card
+{
+    width: 190px;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+}
+.card img
+{
+    width: 160px;
+}
+.card p
+{
+    font-size: 10px;
+    font-weight: 300;
+    color: #1A163C;
+}
+.card b
+{
+    font-size: 12px;
+    font-weight: 500;
+}
+.cards
+{
+    padding: 0px 40px;
+    max-width: 1366px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+button
+{
+    border: none;
+    background-color: #1A163C;
+    color: #FFFFFF;
+}
+.btn, .active
+{
+    border-radius: 25px;
+    padding: 10px;
+    line-height: 0.8;
+    font-size: 12px;
+    margin: 0px 5px;
+}
+.btn
+{
+    background: #A6A3BA;
+}
+.nv
+{
+    height: 44px;
+    padding: 0px 20px;
+    margin: 20px;
+    border-radius: 11px;
+}
+.nav
+{
+    text-align: center;
+    padding-top: 20px;
+}
+footer
+{
+    height: 64px;
+    background-color: #1A163C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p
+{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+
+@media(max-width: 750px)
+{
+    header input
+    {
+        width: 50%;
+    }
+    header h3 a
+    {
+        font-size: 14px;
+    }
+    header
+    {
+        padding: 0px 20px;
+    }
+    .ads .w50, .ads .w51
+    {
+        margin: 20px 0px;
+        width: 100%;
+        min-width: unset;
+    }
+    .ads
+    {
+        margin: 0;
+    }
+}
+
+
+@media(max-width: 520px)
+{
+    .card
+    {
+        width: 100%;
+        max-width: 250px;
+        margin: 10px auto
+    }
+    .cards
+    {
+        padding: 10px 20px;
+    }
+}
