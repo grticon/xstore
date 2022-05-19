@@ -106,7 +106,7 @@ header a
 button
 {
     border: none;
-    background-color: #6B59E7;
+    background-color: #A53333;
     color: #FFFFFF;
 }
 .btn, .active
@@ -136,7 +136,7 @@ button
 footer
 {
     height: 64px;
-    background-color: #6B59E7;
+    background-color: #A53333;
     display: flex;
     align-items: center;
     justify-content: center;
