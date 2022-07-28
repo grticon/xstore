@@ -4,84 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X-STORE</title>
+    <title>Xtore</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="flex sb">
-        <h3><a href="index.html">X-STORE</a></h3>
-        <input type="text" placeholder="search">
-        <a href="#">ACCOUNTS</a>
-    </header>
-    <section class="flex sb ads">
-        <div class="w50"></div>
-        <div class="w51"></div>
-    </section>
-    <section class="flex cards">
-        <div class="card">
-            <img src="image/item.jpg" alt="">
-            <p>BENGOO G9000 Stereo Gaming Headset</p>
-            <b>N3,580</b>
-        </div>
-        <div class="card">
-            <img src="image/item.jpg" alt="">
-            <p>BENGOO G9000 Stereo Gaming Headset</p>
-            <b>N3,580</b>
-        </div>
-        <div class="card">
-            <img src="image/item.jpg" alt="">
-            <p>BENGOO G9000 Stereo Gaming Headset</p>
-            <b>N3,580</b>
-        </div>
-        <div class="card">
-            <img src="image/item.jpg" alt="">
-            <p>BENGOO G9000 Stereo Gaming Headset</p>
-            <b>N3,580</b>
-        </div>
-        <div class="card">
-            <img src="image/item.jpg" alt="">
-            <p>BENGOO G9000 Stereo Gaming Headset</p>
-            <b>N3,580</b>
-        </div>
-        <div class="card">
-            <img src="image/item.jpg" alt="">
-            <p>BENGOO G9000 Stereo Gaming Headset</p>
-            <b>N3,580</b>
-        </div>
-        <div class="card">
-            <img src="image/item.jpg" alt="">
-            <p>BENGOO G9000 Stereo Gaming Headset</p>
-            <b>N3,580</b>
-        </div>
-        <div class="card">
-            <img src="image/item.jpg" alt="">
-            <p>BENGOO G9000 Stereo Gaming Headset</p>
-            <b>N3,580</b>
-        </div>
-        <div class="card">
-            <img src="image/item.jpg" alt="">
-            <p>BENGOO G9000 Stereo Gaming Headset</p>
-            <b>N3,580</b>
-        </div>
-        <div class="card">
-            <img src="image/item.jpg" alt="">
-            <p>BENGOO G9000 Stereo Gaming Headset</p>
-            <b>N3,580</b>
+<body id="page">
+    <section id="landing">
+        <header>
+            <h4>Xtore</h4>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="menu">
+                <li><a href="#" onclick="toggleMenu();">home</a></li>
+                <li><a href="#" onclick="toggleMenu();">Products</a></li>
+                <li><a href="#" onclick="toggleMenu();">help</a></li>
+                <li><a href="#" onclick="toggleMenu();">sign in</a></li>
+            </ul>
+        </header>
+        <div class="welcome">
+            <div class="w50">
+                <h1>ALL IN ONE</h1>
+                <h3>ONLINE STORE</h3>
+                <button class="primary">shop</button>
+            </div>
+            <div class="w50">
+                <img src="image/illustration.svg" alt="">
+            </div>
         </div>
     </section>
-    <div class="nav">
-        <div class="num">
-            <button class="active">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-        </div>
-        <button class="nv">Prev</button>
-        <button class="nv">Next</button>
+    <div class="switch">
+        <div id="on" onclick="light()" style="display: none;">light</div>
+        <div id="off" onclick="dark()">dark</div>
     </div>
-    <footer>
-        <p>copyright (c) 2022  All rights reserved ASTERIX</p>
-    </footer>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        };
+
+        function dark(){
+            document.getElementById('page').style.backgroundColor='#11113d';
+            document.getElementById('page').style.color='#FFFFFF';
+            document.getElementById('on').style.display='block';
+            document.getElementById('off').style.display='none';
+        };
+
+        function light(){
+            document.getElementById('page').style.backgroundColor='#FFFFFF';
+            document.getElementById('page').style.color='#11113d';
+            document.getElementById('off').style.display='block';
+            document.getElementById('on').style.display='none';
+        }
+    </script>
 </body>
 </html>
